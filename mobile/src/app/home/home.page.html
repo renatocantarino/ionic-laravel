@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Novo  <ion-button  style="margin-left: 200px;"   (click)="back()" color="light">Voltar</ion-button>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <form>
+      <ion-item>
+        <ion-label>Nome</ion-label>
+        <ion-input type="text" [(ngModel)]="todo.nome" name="title"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Email</ion-label>
+        <ion-textarea [(ngModel)]="todo.email" name="description"></ion-textarea>
+      </ion-item>
+     
+      <ion-button (click)="save()" color="tertiary">Salvar</ion-button>     
+      <ion-button (click)="clear()" color="warning">Limpar</ion-button>
+     
+    </form>
+ 
+  </div>
+</ion-content>
