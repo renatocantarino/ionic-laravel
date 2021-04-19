@@ -17,7 +17,7 @@
 
 # Beckend
 
-- Laravel 8.12
+- Laravel rest api 8.12
 - MongoAtlas Cluster
 - jenssegers/mongoDB 3.18
 - php artisan serve
